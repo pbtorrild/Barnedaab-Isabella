@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Barnedaab Isabella//Invitation//DA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:isabella-barnedaab-20261031@pbtorrild.github.io
+DTSTAMP:20260809T095400Z
+DTSTART;TZID=Europe/Copenhagen:20261031T110000
+SUMMARY:Isabellas barnedåb
+LOCATION:Nors Kirke, Holmevej 29, 7700 Thisted
+DESCRIPTION:Barnedåb i Nors Kirke. Efterfølgende frokost og kaffe i Spejlsalen, Sennelsvej 47, 7700 Thisted.
+URL:https://pbtorrild.github.io/Barnedaab-Isabella/
+END:VEVENT
+END:VCALENDAR

@@ -15,7 +15,7 @@
   <meta property="og:locale" content="da_DK">
   <meta property="og:site_name" content="Isabellas barnedåb">
   <meta property="og:title" content="Isabellas barnedåb - 31. oktober 2026">
-  <meta property="og:description" content="Vi vil gerne invitere jer til Isabellas barnedåb den 31. oktober kl. 11.00 i Nors Kirke. Efterfølgende er der frokost og kaffe i Spejlsalen.">
+  <meta property="og:description" content="Vi vil gerne invitere dig/jer til Isabellas barnedåb den 31. oktober kl. 11.00 i Nors Kirke. Efterfølgende er der frokost og kaffe i Spejlsalen.">
   <meta property="og:url" content="https://pbtorrild.github.io/Barnedaab-Isabella/">
   <meta property="og:image" content="https://pbtorrild.github.io/Barnedaab-Isabella/isabella.jpg">
   <meta property="og:image:secure_url" content="https://pbtorrild.github.io/Barnedaab-Isabella/isabella.jpg">
@@ -185,10 +185,24 @@
       border-radius: 50%;
       background: var(--blush);
       color: var(--lavender);
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 1.35rem;
-      font-weight: 600;
+      text-decoration: none;
+      flex: 0 0 42px;
     }
+    .icon svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+      stroke: currentColor;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    a.icon {
+      cursor: pointer;
+      transition: transform .16s ease, background .16s ease;
+    }
+    a.icon:hover { transform: translateY(-1px); background: var(--lavender-light); }
 
     .detail strong {
       display: block;
@@ -364,29 +378,34 @@
       <div class="content">
         <p class="eyebrow">Du/I er inviteret</p>
         <h1>Isabellas<br>barnedåb</h1>
-        <p class="subtitle">Vi vil gerne invitere jer til at fejre en helt særlig dag sammen med os.</p>
+        <p class="subtitle">Vi vil gerne invitere dig/jer til at fejre en helt særlig dag sammen med os.</p>
         <div class="divider" aria-hidden="true"></div>
 
         <div class="details">
           <div class="detail">
-            <div class="icon">31</div>
+            <a class="icon" href="isabellas-barnedaab.ics" aria-label="Tilføj Isabellas barnedåb til kalender" title="Tilføj til kalender">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path><path d="M8 14h2M14 14h2M8 17h2M14 17h2"></path></svg>
+            </a>
             <div>
               <strong>31. oktober 2026</strong>
-              <span>Kl. 11.00</span>
+              <span>Kl. 11.00 · Tryk på kalenderen for at tilføje dagen</span>
             </div>
           </div>
 
           <div class="detail">
-            <div class="icon">†</div>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v18M7 8h10"></path></svg>
+            </div>
             <div>
               <strong>Nors Kirke</strong>
-              <a href="https://www.google.com/maps/search/?api=1&query=Nors+Kirke%2C+Holmevej+29%2C+7700+Thisted" target="_blank" rel="noopener">Holmevej 29, 7700 Thisted</a><br>
-              <span>Barnedåben begynder kl. 11.00</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Nors+Kirke%2C+Holmevej+29%2C+7700+Thisted" target="_blank" rel="noopener">Holmevej 29, 7700 Thisted</a>
             </div>
           </div>
 
           <div class="detail">
-            <div class="icon">♡</div>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
             <div>
               <strong>Frokost og kaffe bagefter</strong>
               <a href="https://www.google.com/maps/search/?api=1&query=Sennelsvej+47%2C+7700+Thisted" target="_blank" rel="noopener">Spejlsalen<br>Sennelsvej 47, 7700 Thisted</a>
@@ -394,16 +413,31 @@
           </div>
         </div>
 
-        <p class="closing">Vi glæder os til at dele dagen med jer.</p>
+        <p class="closing">Vi glæder os til at dele dagen med dig/jer.</p>
       </div>
     </section>
 
-    <section class="location-section" aria-label="Kort og rutevejledning">
+    <section class="location-section" aria-label="Praktisk information, kort og rutevejledning">
+      <div class="route-card">
+        <div>
+          <strong>Svar udbedes</strong>
+          <span>Senest 3. oktober 2026 på mail til <a href="mailto:pbtorrild+dåb@gmail.com" style="color:inherit; font-weight:700;">pbtorrild+dåb@gmail.com</a>.</span>
+        </div>
+        <a class="button primary" href="mailto:pbtorrild+dåb@gmail.com?subject=Svar%20på%20invitation%20til%20Isabellas%20barnedåb">Send svar</a>
+      </div>
+      <div class="route-card">
+        <div>
+          <strong>Ønsker til Isabella</strong>
+          <span>Hvis du/I ønsker inspiration til en gave, har vi samlet Isabellas ønsker på Ønskeskyen.</span>
+        </div>
+        <a class="button primary" href="https://onskeskyen.dk/s/es94pk" target="_blank" rel="noopener">Se ønskelisten ♡</a>
+      </div>
+
       <div class="location-grid">
         <article class="location-card" id="kirke">
           <iframe class="location-map" title="Kort over Nors Kirke" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Nors+Kirke,+Holmevej+29,+7700+Thisted&output=embed"></iframe>
           <div class="location-body">
-            <p class="location-kicker">Barnedåb · kl. 11.00</p>
+            <p class="location-kicker">Barnedåb</p>
             <h2 class="location-title">Nors Kirke</h2>
             <p class="location-address">Holmevej 29, Nors<br>7700 Thisted</p>
             <div class="actions">
@@ -425,22 +459,6 @@
             </div>
           </div>
         </article>
-      </div>
-
-      <div class="route-card">
-        <div>
-          <strong>Svar udbedes</strong>
-          <span>Senest 3. oktober 2026 på mail til <a href="mailto:pbtorrild+dåb@gmail.com" style="color:inherit; font-weight:700;">pbtorrild+dåb@gmail.com</a>.</span>
-        </div>
-        <a class="button primary" href="mailto:pbtorrild+dåb@gmail.com?subject=Svar%20på%20invitation%20til%20Isabellas%20barnedåb">Send svar</a>
-      </div>
-
-      <div class="route-card">
-        <div>
-          <strong>Ønsker til Isabella</strong>
-          <span>Hvis I ønsker inspiration til en gave, har vi samlet Isabellas ønsker på Ønskeskyen.</span>
-        </div>
-        <a class="button primary" href="https://onskeskyen.dk/s/es94pk" target="_blank" rel="noopener">Se ønskelisten ♡</a>
       </div>
     </section>
   </main>
