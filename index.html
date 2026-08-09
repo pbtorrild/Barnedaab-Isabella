@@ -17,16 +17,18 @@
   <meta property="og:title" content="Isabellas barnedåb - 31. oktober 2026">
   <meta property="og:description" content="Vi vil gerne invitere dig/jer til Isabellas barnedåb den 31. oktober kl. 11.00 i Nors Kirke. Efterfølgende er der frokost og kaffe i Spejlsalen.">
   <meta property="og:url" content="https://pbtorrild.github.io/Barnedaab-Isabella/">
-  <meta property="og:image" content="https://pbtorrild.github.io/Barnedaab-Isabella/isabella.jpg">
-  <meta property="og:image:secure_url" content="https://pbtorrild.github.io/Barnedaab-Isabella/isabella.jpg">
+  <meta property="og:image" content="https://pbtorrild.github.io/Barnedaab-Isabella/og-image.jpg?v=3">
+  <meta property="og:image:secure_url" content="https://pbtorrild.github.io/Barnedaab-Isabella/og-image.jpg?v=3">
   <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Isabella - invitation til barnedåb">
 
   <!-- X / Twitter cards use the same sharing image -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Isabellas barnedåb - 31. oktober 2026">
   <meta name="twitter:description" content="Barnedåb kl. 11.00 i Nors Kirke med efterfølgende frokost og kaffe i Spejlsalen.">
-  <meta name="twitter:image" content="https://pbtorrild.github.io/Barnedaab-Isabella/isabella.jpg">
+  <meta name="twitter:image" content="https://pbtorrild.github.io/Barnedaab-Isabella/og-image.jpg?v=3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -199,10 +201,14 @@
       fill: none;
     }
     a.icon {
+      color: var(--lavender);
       cursor: pointer;
       transition: transform .16s ease, background .16s ease;
     }
     a.icon:hover { transform: translateY(-1px); background: var(--lavender-light); }
+    .detail a.icon,
+    .detail a.icon:visited,
+    .detail a.icon:active { color: var(--lavender); }
 
     .detail strong {
       display: block;
@@ -354,8 +360,10 @@
     @media (max-width: 800px) {
       .page { width: min(100% - 20px, 680px); margin: 10px auto; border-radius: 24px; }
       .hero { grid-template-columns: 1fr; min-height: 0; }
-      .photo-wrap { min-height: 52vh; max-height: 650px; }
-      .content { padding: 50px 30px 58px; }
+      .photo-wrap { min-height: 42vh; max-height: 520px; }
+      .content { padding: 46px 30px 30px; }
+      .closing { margin-top: 26px; }
+      .location-section { padding-top: 14px; }
       h1 { font-size: clamp(3.4rem, 17vw, 5.2rem); }
       .location-grid { grid-template-columns: 1fr; }
       .route-card { align-items:flex-start; flex-direction:column; }
@@ -365,7 +373,7 @@
 
     @media (max-width: 420px) {
       .page { width: 100%; margin: 0; border-radius: 0; border: 0; }
-      .photo-wrap { min-height: 48vh; }
+      .photo-wrap { min-height: 38vh; max-height: 430px; }
       .content { padding-inline: 24px; }
     }
   </style>
