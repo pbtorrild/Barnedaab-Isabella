@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#575351">
+  <title>Isabellas barnedåb - 31. oktober 2026</title>
+  <meta name="description" content="Invitation til Isabellas barnedåb den 31. oktober 2026 kl. 11.00 i Nors Kirke.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --charcoal: #575351;
+      --charcoal-deep: #2d2725;
+      --rose: #c9a697;
+      --blush: #f4e5ea;
+      --lavender: #8c6a8f;
+      --lavender-light: #e8dce8;
+      --paper: #faf7f5;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--charcoal-deep);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(201,166,151,.26), transparent 28rem),
+        radial-gradient(circle at 88% 30%, rgba(140,106,143,.18), transparent 32rem),
+        var(--paper);
+      font-family: "Nunito Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 32px auto;
+      background: rgba(255,255,255,.84);
+      border: 1px solid rgba(87,83,81,.10);
+      border-radius: 34px;
+      overflow: hidden;
+      box-shadow: 0 26px 70px rgba(45,39,37,.10);
+      backdrop-filter: blur(7px);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      min-height: 720px;
+    }
+
+    .photo-wrap {
+      position: relative;
+      min-height: 560px;
+      background: var(--charcoal);
+      overflow: hidden;
+    }
+
+    .photo-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 62%, rgba(45,39,37,.28));
+      pointer-events: none;
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 46%;
+      display: block;
+    }
+
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(44px, 7vw, 88px);
+      isolation: isolate;
+    }
+
+    .content::before,
+    .content::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      z-index: -1;
+    }
+    .content::before {
+      width: 190px;
+      height: 190px;
+      right: -62px;
+      top: 56px;
+      background: var(--lavender-light);
+      opacity: .65;
+    }
+    .content::after {
+      width: 120px;
+      height: 120px;
+      left: -35px;
+      bottom: 52px;
+      background: var(--blush);
+      opacity: .9;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--lavender);
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(3.3rem, 7vw, 6.4rem);
+      line-height: .88;
+      letter-spacing: -.035em;
+    }
+
+    .subtitle {
+      margin: 20px 0 34px;
+      max-width: 34rem;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.45rem, 2.5vw, 2rem);
+      line-height: 1.25;
+      color: var(--charcoal);
+    }
+
+    .divider {
+      width: 58px;
+      height: 3px;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--rose), var(--lavender));
+      margin: 0 0 30px;
+    }
+
+    .details {
+      display: grid;
+      gap: 22px;
+      margin: 0;
+    }
+
+    .detail {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--blush);
+      color: var(--lavender);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    .detail strong {
+      display: block;
+      margin-bottom: 2px;
+      font-size: .92rem;
+      letter-spacing: .02em;
+    }
+
+    .detail span, .detail a {
+      color: var(--charcoal);
+      text-decoration: none;
+      line-height: 1.55;
+    }
+
+    .closing {
+      margin: 34px 0 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 24px 24px;
+      color: rgba(45,39,37,.60);
+      font-size: .78rem;
+      letter-spacing: .04em;
+    }
+
+
+    .location-section {
+      padding: 0 clamp(28px, 5vw, 56px) 56px;
+      background: rgba(250,247,245,.82);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .location-card {
+      overflow: hidden;
+      border: 1px solid rgba(87,83,81,.12);
+      border-radius: 22px;
+      background: var(--white);
+      box-shadow: 0 12px 30px rgba(45,39,37,.06);
+    }
+
+    .location-map {
+      width: 100%;
+      height: 230px;
+      border: 0;
+      display: block;
+      background: var(--lavender-light);
+    }
+
+    .location-body { padding: 22px; }
+    .location-kicker {
+      margin: 0 0 6px;
+      color: var(--lavender);
+      font-size: .73rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .location-title {
+      margin: 0 0 5px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.65rem;
+      line-height: 1.05;
+    }
+    .location-address {
+      margin: 0 0 18px;
+      color: var(--charcoal);
+      line-height: 1.5;
+    }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 10px 15px;
+      border-radius: 999px;
+      border: 1px solid rgba(140,106,143,.22);
+      color: var(--lavender);
+      background: var(--blush);
+      text-decoration: none;
+      font-size: .88rem;
+      font-weight: 600;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(45,39,37,.09);
+      background: var(--lavender-light);
+    }
+    .button.primary {
+      color: var(--white);
+      background: var(--lavender);
+      border-color: var(--lavender);
+    }
+
+    .route-card {
+      margin-top: 18px;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      border-radius: 20px;
+      background: linear-gradient(100deg, var(--blush), var(--lavender-light));
+      border: 1px solid rgba(140,106,143,.12);
+    }
+    .route-card strong { display:block; margin-bottom:3px; }
+    .route-card span { color:var(--charcoal); font-size:.92rem; }
+
+    .quick-nav {
+      position: fixed;
+      left: 50%;
+      bottom: 16px;
+      transform: translateX(-50%);
+      z-index: 20;
+      display: none;
+      gap: 8px;
+      padding: 7px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.94);
+      border: 1px solid rgba(87,83,81,.12);
+      box-shadow: 0 12px 34px rgba(45,39,37,.16);
+      backdrop-filter: blur(10px);
+    }
+    .quick-nav a {
+      padding: 9px 13px;
+      border-radius: 999px;
+      color: var(--charcoal-deep);
+      text-decoration: none;
+      font-size: .82rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .quick-nav a:first-child { background: var(--blush); }
+    .quick-nav a:last-child { background: var(--lavender-light); }
+
+    @media (max-width: 800px) {
+      .page { width: min(100% - 20px, 680px); margin: 10px auto; border-radius: 24px; }
+      .hero { grid-template-columns: 1fr; min-height: 0; }
+      .photo-wrap { min-height: 52vh; max-height: 650px; }
+      .content { padding: 50px 30px 58px; }
+      h1 { font-size: clamp(3.4rem, 17vw, 5.2rem); }
+      .location-grid { grid-template-columns: 1fr; }
+      .route-card { align-items:flex-start; flex-direction:column; }
+      .quick-nav { display:flex; }
+      .footer { padding-bottom:82px; }
+    }
+
+    @media (max-width: 420px) {
+      .page { width: 100%; margin: 0; border-radius: 0; border: 0; }
+      .photo-wrap { min-height: 48vh; }
+      .content { padding-inline: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="photo-wrap">
+        <img class="photo" src="isabella.jpg" alt="Isabella" loading="eager">
+      </div>
+
+      <div class="content">
+        <p class="eyebrow">Du er inviteret</p>
+        <h1>Isabellas<br>barnedåb</h1>
+        <p class="subtitle">Vi vil gerne invitere jer til at fejre en helt særlig dag sammen med os.</p>
+        <div class="divider" aria-hidden="true"></div>
+
+        <div class="details">
+          <div class="detail">
+            <div class="icon">31</div>
+            <div>
+              <strong>31. oktober 2026</strong>
+              <span>Kl. 11.00</span>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="icon">†</div>
+            <div>
+              <strong>Nors Kirke</strong>
+              <a href="https://www.google.com/maps/search/?api=1&query=Nors+Kirke%2C+Holmevej+29%2C+7700+Thisted" target="_blank" rel="noopener">Holmevej 29, 7700 Thisted</a><br>
+              <span>Barnedåben begynder kl. 11.00</span>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="icon">♡</div>
+            <div>
+              <strong>Frokost og kaffe bagefter</strong>
+              <a href="https://www.google.com/maps/search/?api=1&query=Sennelsvej+47%2C+7700+Thisted" target="_blank" rel="noopener">Spejlsalen<br>Sennelsvej 47, 7700 Thisted</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="closing">Vi glæder os til at dele dagen med jer.</p>
+      </div>
+    </section>
+
+    <section class="location-section" aria-label="Kort og rutevejledning">
+      <div class="location-grid">
+        <article class="location-card" id="kirke">
+          <iframe class="location-map" title="Kort over Nors Kirke" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Nors+Kirke,+Holmevej+29,+7700+Thisted&output=embed"></iframe>
+          <div class="location-body">
+            <p class="location-kicker">Barnedåb · kl. 11.00</p>
+            <h2 class="location-title">Nors Kirke</h2>
+            <p class="location-address">Holmevej 29, Nors<br>7700 Thisted</p>
+            <div class="actions">
+              <a class="button primary" href="https://www.google.com/maps/dir/?api=1&destination=Nors+Kirke%2C+Holmevej+29%2C+7700+Thisted" target="_blank" rel="noopener">↗ Rute til kirken</a>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&query=Nors+Kirke%2C+Holmevej+29%2C+7700+Thisted" target="_blank" rel="noopener">Vis i Maps</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="location-card" id="spejlsalen">
+          <iframe class="location-map" title="Kort over Spejlsalen" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Spejlsalen,+Sennelsvej+47,+7700+Thisted&output=embed"></iframe>
+          <div class="location-body">
+            <p class="location-kicker">Efter kirken</p>
+            <h2 class="location-title">Spejlsalen</h2>
+            <p class="location-address">Sennelsvej 47<br>7700 Thisted</p>
+            <div class="actions">
+              <a class="button primary" href="https://www.google.com/maps/dir/?api=1&destination=Sennelsvej+47%2C+7700+Thisted" target="_blank" rel="noopener">↗ Rute til Spejlsalen</a>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&query=Spejlsalen%2C+Sennelsvej+47%2C+7700+Thisted" target="_blank" rel="noopener">Vis i Maps</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="route-card">
+        <div>
+          <strong>Ønsker til Isabella</strong>
+          <span>Hvis I ønsker inspiration til en gave, har vi samlet Isabellas ønsker på Ønskeskyen.</span>
+        </div>
+        <a class="button primary" href="https://onskeskyen.dk/s/es94pk" target="_blank" rel="noopener">Se ønskelisten ♡</a>
+      </div>
+    </section>
+  </main>
+
+  <nav class="quick-nav" aria-label="Hurtige kortlinks">
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Nors+Kirke%2C+Holmevej+29%2C+7700+Thisted" target="_blank" rel="noopener">Kirke</a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Sennelsvej+47%2C+7700+Thisted" target="_blank" rel="noopener">Frokost</a>
+  </nav>
+
+  <footer class="footer">31.10.2026 · Nors Kirke</footer>
+</body>
+</html>
